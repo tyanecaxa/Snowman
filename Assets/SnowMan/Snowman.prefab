@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 8839890038103392472}
   - component: {fileID: 5687158659772048767}
   - component: {fileID: 5083766723682864879}
+  - component: {fileID: 1593982042202356849}
   m_Layer: 0
   m_Name: Leg
   m_TagString: Untagged
@@ -323,6 +324,27 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1593982042202356849
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5833902391165220327}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e2f7a8ba9468674d84bf27cd0344bea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7633918154002550001
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +354,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1791830510126750549}
+  - component: {fileID: 5651389351343619848}
+  - component: {fileID: 5416598820310584060}
+  - component: {fileID: 4209857414852675845}
   m_Layer: 0
   m_Name: Snowman
   m_TagString: Untagged
@@ -347,8 +372,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7633918154002550001}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 113.004364, y: 1.8846135, z: 125.46157}
+  m_LocalRotation: {x: 0, y: 0.999881, z: 0, w: 0.015428234}
+  m_LocalPosition: {x: 91.2, y: 0.921, z: 98.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -356,7 +381,62 @@ Transform:
   - {fileID: 6258554086571096969}
   - {fileID: 5205064254385858976}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 178.232, z: 0}
+--- !u!143 &5651389351343619848
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633918154002550001}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 1
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.26, z: -0.04}
+--- !u!114 &5416598820310584060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633918154002550001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5a7d671c8255542bbf018c7b051e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
+--- !u!114 &4209857414852675845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633918154002550001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7875365003ba66240a2c8694ed1e4166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraAxisTransform: {fileID: 260453828794759335, guid: e43ffb511af561d46acbc74e5078b102, type: 3}
+  RotationSpeed: 360
+  minAngle: -5
+  maxAngle: 45
 --- !u!1001 &1967417642979465691
 PrefabInstance:
   m_ObjectHideFlags: 0
