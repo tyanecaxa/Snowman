@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-   
+    public float gravity = 9.8f;
     public float Speed;
 
     private CharacterController _CharacterController;
     private Vector3 _moveVector;
+    private float _fallVelocity = 0;
 
     void Start()
     {
@@ -22,6 +23,14 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         _CharacterController.Move(_moveVector * Speed * Time.fixedDeltaTime);
+
+        _fallVelocity += gravity * Time.fixedDeltaTime;
+        _CharacterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
+
+        if(_CharacterController.isGrounded)
+        {
+            _fallVelocity = 0;
+        }
     }
 
     private void MoveUpdate()

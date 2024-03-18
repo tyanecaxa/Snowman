@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5870964953576607211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4135222130443260900}
+  m_Layer: 0
+  m_Name: SnowmanAFK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4135222130443260900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870964953576607211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90.0998, y: -5.8863688, z: 89.28299}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2086888159287044161}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1980639098443435946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4135222130443260900}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7702026
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.886368
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4970093
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8451785
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5344842
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 64.618
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+      propertyPath: m_Name
+      value: Mesh_Snowman
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+--- !u!4 &2086888159287044161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2122fb4557379d4183b6a6dabbf39f6, type: 3}
+  m_PrefabInstance: {fileID: 1980639098443435946}
+  m_PrefabAsset: {fileID: 0}
