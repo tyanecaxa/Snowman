@@ -12,10 +12,16 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _navMeshAgent.destination = snowmanAFK[Random.Range(0, snowmanAFK.Count)].position;
     }
 
     void Update()
     {
-        _navMeshAgent.destination = snowmanAFK[Random.Range(0,snowmanAFK.Count)].position;
+        if (_navMeshAgent.remainingDistance == 0)
+        {
+            _navMeshAgent.destination = snowmanAFK[Random.Range(0, snowmanAFK.Count)].position;
+
+        }
     }
+
 }

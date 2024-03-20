@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 328210797364596372}
+  - component: {fileID: 3141847327979951628}
   m_Layer: 5
   m_Name: GameplayUI
   m_TagString: Untagged
@@ -38,6 +39,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3141847327979951628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145141478756251237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3411085888dd7f74f8647d3b04850d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarPlayer: {fileID: 100919796475314515}
+  healthBarEnemy: {fileID: 2703840167971591801}
+  gameOverScreen: {fileID: 4245414075762150261}
+  reticle: {fileID: 5014038796308447657}
+  healthSo: {fileID: 11400000, guid: 451316d0573444744bab3840a93e4a7f, type: 2}
+  playerDeathEvent: {fileID: 11400000, guid: 7764cc33c6675964784b9a3a596b4e7b, type: 2}
 --- !u!1 &1266869698009965685
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +277,7 @@ GameObject:
   - component: {fileID: 802576338905353361}
   - component: {fileID: 4249110928395162350}
   - component: {fileID: 8871195708746496072}
+  - component: {fileID: 100919796475314515}
   m_Layer: 5
   m_Name: Health Bar Player
   m_TagString: Untagged
@@ -323,6 +343,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &100919796475314515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240131281184105684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c94f917fff0f54999f5f80feb8ae45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 3602600144575131328}
 --- !u!1 &3752924055013076389
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +677,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5838189092242096504}
-  - component: {fileID: 4346908183780512936}
   m_Layer: 5
   m_Name: GameOverScreen
   m_TagString: Untagged
@@ -674,18 +706,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4346908183780512936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4245414075762150261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9280d1fab446859458117a04dec7bd2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5394266879731559538
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +717,7 @@ GameObject:
   - component: {fileID: 5384840804784221606}
   - component: {fileID: 2669728877477879531}
   - component: {fileID: 8137059962228894538}
+  - component: {fileID: 2703840167971591801}
   m_Layer: 5
   m_Name: Health Bar Enemy
   m_TagString: Untagged
@@ -762,6 +783,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2703840167971591801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5394266879731559538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c94f917fff0f54999f5f80feb8ae45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 1191624761717081992}
 --- !u!1 &5705361669733466069
 GameObject:
   m_ObjectHideFlags: 0
