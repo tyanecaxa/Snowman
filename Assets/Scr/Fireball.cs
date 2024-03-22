@@ -24,9 +24,9 @@ public class Fireball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.root.TryGetComponent(out Health health))
+        if (collision.transform.root.TryGetComponent(out EnemyCharacter health))
         {
-            health.DealDamage(damage);
+            health.TakeDamage(damage);
         }
         DestroyFireball();
     }
