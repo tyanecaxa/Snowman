@@ -9,6 +9,7 @@ public class UIActionMode : MonoBehaviour
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private RectTransform reticle;
     [SerializeField] private HealthSo healthSo; //вот тут мы связали два игровых объекта через скриптовый
+    [SerializeField] private HealthSo EnemyhealthSo;
     [SerializeField] private SimpleEvent playerDeathEvent;
     [SerializeField] private GameObject reloadOnEscape;
     private void OnEnable()
@@ -38,7 +39,7 @@ public class UIActionMode : MonoBehaviour
         //так как мы просто обращаеся к скриптовому объекту - даже обращение в апдейте безопасно и независимо.
         //Совсем правильно, конечно, сделать через события.
         healthBarPlayer.SetHealthBar(healthSo.GetFraction());
-        healthBarEnemy.SetHealthBar(healthSo.GetFraction());
+        healthBarEnemy.SetHealthBar(EnemyhealthSo.GetFraction());
     }
 
     private void ShowGameOverScreen()

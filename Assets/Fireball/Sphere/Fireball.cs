@@ -4,40 +4,36 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    public float speed;
-    public float lifeTime;
-    public float damage = 10;
+    [SerializeField] private float speed;
+    [SerializeField] private float lifetime;
+    [SerializeField] private float damage = 10;
 
-    void FixedUpdate()
+    private float _timer;
+
+    private void Awake()
     {
-        MoveFixedUpdate();
+        _timer = lifetime;
     }
-    void MoveFixedUpdate()
+
+    private void FixedUpdate()
     {
+        _timer -= Time.fixedDeltaTime;
+        if (_timer <= 0) DestroyFireball();
         transform.position += transform.forward * speed * Time.fixedDeltaTime;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        DamageEnemy(collision);
+        if (collision.transform.root.TryGetComponent(out Health health))
+        {
+            health.DealDamage(damage);
+        }
         DestroyFireball();
     }
-    private void DamageEnemy(Collision collision)
-    {
-        var enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-        if (enemyHealth != null)
-        {
-            enemyHealth.DealDamage(damage);
-        }
-    }
+
+
     private void DestroyFireball()
     {
         Destroy(gameObject);
     }
-
-    private void Start()
-    {
-        Invoke("DestroyFireball", lifeTime);
-    }
-
-    }
+}

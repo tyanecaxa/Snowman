@@ -11,6 +11,10 @@ public class CameraRotation : MonoBehaviour
     public float minAngle;
     public float maxAngle;
 
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         RotationAngleY();

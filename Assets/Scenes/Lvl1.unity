@@ -417,7 +417,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.5058824, g: 0.27058825, b: 0.1764706, a: 1}
+  m_Color: {r: 0.5471698, g: 0.22285202, b: 0.16828048, a: 1}
   m_Intensity: 2.51
   m_Range: 10
   m_SpotAngle: 30
@@ -869,7 +869,7 @@ Transform:
   m_GameObject: {fileID: 1852190684}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.5, y: 0.893, z: 81.83}
+  m_LocalPosition: {x: 107.5, y: 0.68, z: 81.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -922,12 +922,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1852190684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be23421c1321e2b4899b32a918ae07ad, type: 3}
+  m_Script: {fileID: 11500000, guid: f976c82b3affbab45aeb2c26ed1db89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 100
-  valueRectTransform: {fileID: 0}
-  gameplayUI: {fileID: 0}
+  health: {fileID: 11400000, guid: 0a691a24952fc254d819df00fc5c7a3a, type: 2}
+  playerDeathEvent: {fileID: 11400000, guid: 7764cc33c6675964784b9a3a596b4e7b, type: 2}
 --- !u!1001 &279031290834099646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -990,11 +989,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2815169807266191415, guid: 9e09106d47f3ecd4c9a1b60eaf3c41f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: -0.86
       objectReference: {fileID: 0}
     - target: {fileID: 2815169807266191415, guid: 9e09106d47f3ecd4c9a1b60eaf3c41f4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 79.9
+      value: 79.81
       objectReference: {fileID: 0}
     - target: {fileID: 2815169807266191415, guid: 9e09106d47f3ecd4c9a1b60eaf3c41f4, type: 3}
       propertyPath: m_LocalRotation.w

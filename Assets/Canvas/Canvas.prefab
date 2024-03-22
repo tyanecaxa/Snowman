@@ -56,7 +56,9 @@ MonoBehaviour:
   gameOverScreen: {fileID: 4245414075762150261}
   reticle: {fileID: 5014038796308447657}
   healthSo: {fileID: 11400000, guid: 451316d0573444744bab3840a93e4a7f, type: 2}
+  EnemyhealthSo: {fileID: 11400000, guid: 0a691a24952fc254d819df00fc5c7a3a, type: 2}
   playerDeathEvent: {fileID: 11400000, guid: 7764cc33c6675964784b9a3a596b4e7b, type: 2}
+  reloadOnEscape: {fileID: 0}
 --- !u!1 &1266869698009965685
 GameObject:
   m_ObjectHideFlags: 0

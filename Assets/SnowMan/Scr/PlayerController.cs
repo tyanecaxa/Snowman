@@ -5,9 +5,9 @@ public class PlayerController : MonoBehaviour
 {
     public float gravity = 9.8f;
     public float Speed;
+    public Vector3 _moveVector;
 
     private CharacterController _CharacterController;
-    private Vector3 _moveVector;
     private float _fallVelocity = 0;
 
     void Start()
