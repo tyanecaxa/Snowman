@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 7875365003ba66240a2c8694ed1e4166
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CameraAxisTransform: {fileID: 4304425177076059563, guid: dba67dd3594312e4db353afc837e45d0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
