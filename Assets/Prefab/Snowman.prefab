@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &131449848991763101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2777876903035933158}
+  m_Layer: 0
+  m_Name: Rig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2777876903035933158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131449848991763101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1791830510126750549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1711523829934337648
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPoint: {fileID: 7180814322834365011}
   cameraLink: {fileID: 3605788274317892221}
-  targetInSkyDistance: 4
+  targetInSkyDistance: 15
 --- !u!1 &7633918154002550001
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +542,7 @@ GameObject:
   - component: {fileID: 8791608892917745533}
   - component: {fileID: 3100321670949736620}
   - component: {fileID: 2995523730847276979}
+  - component: {fileID: 4935370168619050028}
   m_Layer: 0
   m_Name: Snowman
   m_TagString: Untagged
@@ -537,6 +569,7 @@ Transform:
   - {fileID: 5064137229135297472}
   - {fileID: 7180814322834365011}
   - {fileID: 2344450511820930002}
+  - {fileID: 2777876903035933158}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 178.232, z: 0}
 --- !u!143 &5651389351343619848
@@ -624,6 +657,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireballPrefab: {fileID: -6366357338113551430, guid: d653b6ad614c8a54a8b0c56851033de8, type: 3}
   fireballSourgeTransform: {fileID: 5064137229135297472}
+--- !u!114 &4935370168619050028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633918154002550001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3681707390376c74fa69dca26425109d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeedReference: 1
+  moveVector: {x: 0, y: 0, z: 0}
+  speedMultiplier: 1
 --- !u!1001 &1960555354698577529
 PrefabInstance:
   m_ObjectHideFlags: 0

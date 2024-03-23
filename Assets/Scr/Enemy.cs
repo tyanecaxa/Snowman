@@ -5,8 +5,6 @@ using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
-    public static int enemyCount;
-    
     public List<Transform> patrolPoints;
     public float viewAngle;
     public float damage = 30;
@@ -15,33 +13,20 @@ public class Enemy : MonoBehaviour
     private PlayerCharacter _player;
     private NavMeshAgent _navMeshAgent;
     private bool _isPlayerNoticed;
-    private Health _myHealth;
+    private EnemyCharacter _myHealth;
 
     void Start()
     {
         _player = FindObjectOfType<PlayerCharacter>(true);
         InitComponentLinks();
-        PickNewPatrolPoint();
-        enemyCount += 1;
-        
+        PickNewPatrolPoint();        
     }
     private void InitComponentLinks()
     {
-        _myHealth = GetComponent<Health>();
-        _myHealth.ZeroHealth += DieDieMyDarling;
+        _myHealth = GetComponent<EnemyCharacter>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    private void OnDestroy()
-    {
-        _myHealth.ZeroHealth -= DieDieMyDarling;
-        enemyCount -= 1;
-    }
-
-    private void DieDieMyDarling()
-    {
-        Destroy(gameObject);
-    }
 
     private void Update()
     {
