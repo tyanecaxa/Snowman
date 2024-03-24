@@ -10,21 +10,23 @@ public class HumanoidController : MonoBehaviour
     private CharacterController _characterController;
     private Animator _animator;
 
+
     private void Awake()
     {
         _animator = GetComponentInChildren<Animator>();
         _characterController = GetComponent<CharacterController>();
+        
     }
 
     private void Update()
     {
         if(!_animator) return;
         _animator.SetFloat("Blend", Mathf.Clamp(moveVector.magnitude/ maxSpeedReference, 0, 1));
-        
     }
 
     private void FixedUpdate()
     {
         _characterController.Move(moveVector * speedMultiplier * Time.fixedDeltaTime);
+
     }
 }

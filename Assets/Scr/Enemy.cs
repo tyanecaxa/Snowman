@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private bool _isPlayerNoticed;
     private EnemyCharacter _myHealth;
+    private Health AFKSnowman;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         _myHealth = GetComponent<EnemyCharacter>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        AFKSnowman = GetComponent<Health>();
     }
 
 
