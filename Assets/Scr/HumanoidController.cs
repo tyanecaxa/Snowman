@@ -20,6 +20,7 @@ public class HumanoidController : MonoBehaviour
     {
         if(!_animator) return;
         _animator.SetFloat("Blend", Mathf.Clamp(moveVector.magnitude/ maxSpeedReference, 0, 1));
+        
     }
 
     private void FixedUpdate()

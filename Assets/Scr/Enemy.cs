@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     public List<Transform> patrolPoints;
     public float viewAngle;
     public float damage = 30;
-    public List<Health> _AFKHealth;
 
     private PlayerCharacter _player;
     private NavMeshAgent _navMeshAgent;
