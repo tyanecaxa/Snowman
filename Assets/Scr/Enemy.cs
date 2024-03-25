@@ -45,13 +45,15 @@ public class Enemy : MonoBehaviour
         if (Vector3.Angle(transform.forward, direction) < viewAngle)
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position + Vector3.up, direction, out hit))
+            if (Physics.Raycast(transform.position, direction, out hit))
             {
-                if (hit.collider.gameObject == _player.gameObject)
+                if (hit.collider.transform.root.gameObject == _player.gameObject)
                 {
                     _isPlayerNoticed = true;
                 }
+
             }
+            
         }
 
     }

@@ -11,7 +11,7 @@ public class UIActionMode : MonoBehaviour
     [SerializeField] private GameObject snowmanImage;
     [SerializeField] private GameObject santaImage;
     [SerializeField] private RectTransform reticle;
-    [SerializeField] private HealthSo healthSo; //вот тут мы связали два игровых объекта через скриптовый
+    [SerializeField] private HealthSo healthSo; 
     [SerializeField] private HealthSo EnemyhealthSo;
     [SerializeField] private SimpleEvent playerDeathEvent;
     [SerializeField] private SimpleEvent enemyDeathEvent;
@@ -24,7 +24,6 @@ public class UIActionMode : MonoBehaviour
 
     private void OnEnable()
     {
-        // еще один способ связать объекты между собой. Довольно "хрупкий"
         playerDeathEvent.Subscribe(ShowDeathScreen);
         gameOverScreen.SetActive(false);
 
@@ -80,13 +79,8 @@ public class UIActionMode : MonoBehaviour
 
     private void Update()
     {
-        
-        //так как мы просто обращаеся к скриптовому объекту - даже обращение в апдейте безопасно и независимо.
-        //Совсем правильно, конечно, сделать через события.
         healthBarPlayer.SetHealthBar(healthSo.GetFraction());
         healthBarEnemy.SetHealthBar(EnemyhealthSo.GetFraction());
-
-        
     }
 
 }
