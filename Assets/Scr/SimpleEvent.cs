@@ -2,6 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
+
 //Это простое событие, но в скриптовом объекте. На 10м вебе посмотрели
 [CreateAssetMenu(menuName = "Group23/SimpleEvent")] 
 public class SimpleEvent : ScriptableObject
@@ -30,17 +31,17 @@ public class SimpleEvent : ScriptableObject
 
     #region Menu Commands
 
-    [MenuItem("CONTEXT/" + nameof(SimpleEvent) + "/Clear Subcribers")]
-    static void RaiseEvent(MenuCommand command)
-    {
-        (command.context as SimpleEvent)?.Clear();
-    }
+    //[MenuItem("CONTEXT/" + nameof(SimpleEvent) + "/Clear Subcribers")]
+    //static void RaiseEvent(MenuCommand command)
+    //{
+    //    (command.context as SimpleEvent)?.Clear();
+    //}
     
-    [MenuItem("CONTEXT/" + nameof(SimpleEvent) + "/Raise Event")]
-    static void ClearSubsribers(MenuCommand command)
-    {
-        (command.context as SimpleEvent)?.Raise();
-    }
+    //[MenuItem("CONTEXT/" + nameof(SimpleEvent) + "/Raise Event")]
+    //static void ClearSubsribers(MenuCommand command)
+    //{
+    //    (command.context as SimpleEvent)?.Raise();
+    //}
 
     #endregion
     
